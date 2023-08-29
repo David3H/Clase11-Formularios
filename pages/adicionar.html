@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Personaje</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <p class="descuento">20% de descuento en todos los productos!</p>
+    </nav>
+    <nav class="heroes">
+        <div>
+            <img src="../img/ImgTienda.png" alt="Imagen de logo de la tienda">
+        </div>
+        <h1>Nombre Tienda</h1>
+    </nav>
+    <nav class="navegacion">
+        <ul type="none">
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Registrarme</a></li>
+            <li><a href="#">Ingresar</a></li>
+        </ul>
+    </nav>
+    <form class="formadicionar">
+        <h1>Añadí tu super!</h1>
+        <div class="subtitulo">
+            <label>Agregá tu personaje favorito completando las opciones.</label>
+        </div>
+        <div class="ingresodatos">
+            <div class="nombre">
+                <label for="nom">*Nombre</label>
+                <input type="text" name="nombre" id="nom" required>
+            </div>
+            <div class="especie">
+                <label>*Especie</label>
+                <select name="especie">
+                    <option value="seleccionar">Especie</option>
+                    <option value="especie1">Titan</option>
+                    <option value="especie2">Heroico</option>
+                    <option value="especie3">Especial</option>
+                    <option value="especie4">Super Poderozo</option>
+                </select>
+            </div>
+        </div>
+        <div class="ingresoadd">
+            <div class="fecha">
+                <label for="fech">Fecha</label>
+                <input type="date" name="fecha" id="fech">
+            </div>
+            <div name="agregararchivo">
+                <label>Agregar foto</label><br><br>
+                <input type="file" name="agrgar" id="fot">
+            </div>
+        </div>
+        <div class="divisicion">
+            <div>
+                <textarea name="txtarea" id="area" cols="30" rows="10" placeholder="Descripción"></textarea>
+            </div>
+            <div class="tipopoder">
+                <div>
+                    <div class="poderes">
+                        <label>Poderes</label>
+                    </div>
+                    <div class="poderes">
+                        <input type="checkbox" name="volar" id="volar" value="volar">
+                        <label for="volar">Volar</label>
+                    </div>
+                    <div class="poderes">
+                        <input type="checkbox" name="super" id="super" value="superInteligencia">
+                        <label for="super">SuperInteligencia</label>
+                    </div>
+                    <div class="poderes">
+                        <input type="checkbox" name="rayos" id="rayos" value="rayosx">
+                        <label for="rayos">Vista de rayo láser</label>
+                    </div>
+                    <div class="poderes">
+                        <input type="checkbox" name="billetera" id="billetera" value="billetera">
+                        <label for="billetera">Billetera gorda</label> <br>
+                    </div>
+                </div>
+                <div class="linea">
+                    <hr>
+                </div>
+                <div>
+                    <div class="tipos">
+                        <label>Tipo de Personaje</label>
+                    </div>
+                    <div class="poderes">
+                        <input type="radio" name="tipo" id="heroe" value="volar">
+                        <label for="heroe">Héroe / Heroina</label>
+                    </div>
+                    <div class="poderes">
+                        <input type="radio" name="tipo" id="villano" value="superInteligencia">
+                        <label for="villano">Villano / Villana</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="reset">Añadir</button>
+    </form>
+    <footer>
+        <div class="textofinal">
+            <p>Todos los derechos reservados a FRONT END 1</p>
+        </div>
+    </footer>
+</body>
+</html>
